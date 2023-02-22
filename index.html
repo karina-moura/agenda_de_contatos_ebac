@@ -17,12 +17,12 @@
         <header>
             <h1>Agenda de contatos</h1>
         </header>
-        <form>
-            <input type="text" required placeholder="Nome completo">
-            <input type="tel" required placeholder="Telefone de contato">
+        <form id="form-data">
+            <input type="text" id="nome" required placeholder="Nome completo">
+            <input type="text" id="numero" maxlength="10" onkeypress="return onlynumber();" required placeholder="Telefone de contato">
             <button type="submit">Adicionar +</button>
         </form>
-        <table>
+        <table cellspacing="0">
             <thead>
                 <tr>
                     <th>
@@ -34,14 +34,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        Bruna
-                    </td>
-                    <td>456667773</td>
-                </tr>
+                
             </tbody>
         </table>
     </div>
+    <script src="./main.js">
+
+    </script>
 </body>
 </html>
